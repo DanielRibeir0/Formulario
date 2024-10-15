@@ -1,0 +1,16 @@
+<h1 class="text-center mt-4 mb-4">LISTA DE CONTATOS</h1>
+
+<div class="p-3 border bg-light" class="w-100" style="max-width: 500px; min-width: 300px; margin: auto;">
+    {{#each users}}
+    <br>
+    <p class="form-label">Nome:</p>
+    <p class="form-label form-control">{{this.nome}}</p>
+    <p class="form-label">Email:</p>
+    <p class="form-label form-control">{{this.email}}</p>
+    <br>
+    <a href='/admin/deletar/{{this.id}}'><button class="btn btn-danger">Excluir</button></a>
+    <a href='/admin/editar/{{this.id}}'><button class="btn btn-info">Atualizar</button></a>
+    <br>
+    {{/each}}
+</div>
+

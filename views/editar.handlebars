@@ -1,0 +1,16 @@
+<h1 class="text-center mt-4 mb-4 ">EDITAR USUARIOS</h1>
+
+<form action="/admin/editar/{{usuario.id}}" method="POST" class="p-3 border bg-light" class="w-100"
+        style="max-width: 500px; min-width: 300px; margin: auto;">
+        <p class="form-label">Nome:</p>
+        <input type="text" name="nome" class="form-control" value="{{usuario.nome}}" required>
+        <p class="form-label">E-mail:</p>
+        <input type="email" name="email" class="form-control" value="{{usuario.email}}" required>
+        <p class="form-label">Senha:</p>
+        <input type="text" name="senha" class="form-control" value="{{usuario.senha}}" required>
+        <br>
+        <br>
+        <button class="btn btn-success">Enviar</button>
+        <button type="button" class="btn btn-danger" onclick="cancelar()">Cancelar</button>
+        </div>
+</form>
